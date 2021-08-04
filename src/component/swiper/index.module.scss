@@ -1,0 +1,57 @@
+  .swiperbox{
+    // margin-top: 10vh;
+    // margin-left: 5vw;
+    height: 70vh;
+    width:55vw;
+    border-radius: 5vh;
+    padding: 3vh 1.5vw;
+    position: absolute;
+    top: 115vh;
+    right: 10vw;
+    box-shadow: 0 0 5px 0 #fff;
+    // background: -webkit-linear-gradient(bottom,rgb(124, 124, 172),rgb(255, 255, 255));
+    .swiper{
+      height: 100%;
+      width: 100%;
+      overflow: hidden;
+      border-radius: 5vh;
+    }
+  }
+  .swiperText{
+    position: absolute;
+    height: 100vh;
+    font-size: 6vw;
+    left: -20vw;
+    top: 10vh;
+    font-family: SimHei;
+    color: rgb(185, 207, 255);
+    text{
+      fill:none;
+      stroke:url(#geekColor);
+      stroke-width:1;
+      stroke-dasharray: 10 800;
+      stroke-dashoffset: 10;
+      animation: drawing 5s linear infinite;
+      @keyframes drawing{
+        to{
+          stroke-dasharray: 800;
+          stroke-dashoffset: 0;
+        }
+      }
+    }
+    // ul{
+    //   position: relative;
+    //   top: 3vh;
+    //   left: 1vw;
+    //   font-size: 24px;
+    //   color: rgb(145, 248, 252);
+    //   .triangle{
+    //     position: relative;
+    //     top: 2vh;
+    //     left: 3.2vw;
+    //     height: 5px;
+    //     width: 5px;
+    //     background-color: rgb(234, 253, 151);
+    //   }
+    // }
+  }

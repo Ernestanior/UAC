@@ -1,0 +1,82 @@
+.navbg{
+  background-color: #000;
+  position: fixed;
+  top: 0x;
+  z-index: 1000;
+  display: flex;
+  padding: 1.5vh 0 0 0;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  img{
+    height: 7vw;
+  }
+  .navtitle{
+    color: #fff;
+    font-size:3vw;
+    font-family: "LiSu";
+    // line-height:12vh;
+  }
+  .navbox{
+    font-family: "SimSun";
+    width: 70vw;
+    color: #fff;
+    display: flex;
+    padding: 4vh 7vw;
+    li{
+      flex: 1;
+      font-size:2.3vh;
+      height: 2.5vh;
+      padding:1.5vh 0;
+      margin-right: 3vw;
+      position: relative;
+      overflow: hidden;
+      &:hover{
+        border-radius: 5px;
+        color: #000;
+        background-color: #03e9f4;
+        box-shadow: 0 0 5px 0 #03e9f4,
+        0 0 25px 0 #03e9f4,
+        0 0 50px 0 #03e9f4,
+        0 0 100px 0 #03e9f4
+      }
+      span{
+        position: absolute;
+      }
+    } 
+  }
+}
+@media screen and (max-width:1100px) {
+  .navbg{
+    img{
+      height: 10vw;
+    }
+    .navtitle{
+      font-size:4vw;
+    }
+  }
+  .navbox{
+    li{
+      &:nth-child(5){
+        display: none;
+      }
+    }
+  }
+}
+@media screen and (max-width:700px) {
+  .navbg{
+    img{
+      height: 14vw;
+    }
+    .navtitle{
+      font-size:5vw;
+    }
+  }
+    .navbox{
+    li{
+      &:nth-child(4){
+        display: none;
+      }
+    }
+  }
+}

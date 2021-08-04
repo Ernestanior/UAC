@@ -1,0 +1,53 @@
+.cubecontainer{
+    position: absolute;
+    top: 175vh;
+    left: 10vw;
+    transition: all .2s;
+}
+.cubelist{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15vh;
+    position: relative;
+    top: 20vh;  
+
+    .cubetitle{
+      font-size: 30px;
+      width: 10vw;
+      color: #fff;
+      font-size:2.3vh;
+      height: 2.5vh;
+      padding:1.5vh 0;
+      position:relative;
+      top: 16vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+      transition: all .2s;
+      &:hover{
+        border-radius: 5px;
+        color: #000;
+        background-color: #03e9f4;
+        box-shadow: 0 0 5px 0 #03e9f4,
+        0 0 25px 0 #03e9f4,
+        0 0 50px 0 #03e9f4,
+        0 0 100px 0 #03e9f4
+      }
+      span{
+        position: absolute;
+      }
+    }
+    .cubebox{
+      width: 60vw;
+      display: flex;
+    }
+  }
+  @media screen and (max-width:900px)  {
+    .cubelist{
+      .cubetitle{
+        width: 20vw;
+      }
+    }
+  }

@@ -1,0 +1,50 @@
+.iconContainer{
+  position: absolute;
+  top: 550vh;
+  .code{
+    transition: all .8s;
+    position: absolute;
+    left: -24vw;
+    top: -18vh;
+    img{
+      width: 20vw;
+      height: 20vw;
+    }
+    opacity: 0;
+  }
+}
+.iconList{
+  width: 60vw;
+  position: absolute;
+  left: 36vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  li{
+    border-radius: 50%;
+    box-shadow: 0 0 5px 0 #03e9f4,0 0 25px 0 #03e9f4;
+    padding:2vh;
+    height: 3vw;
+    width: 3vw;
+    margin-right: 3vw;
+    transition: all .5s;
+    &:hover{
+      box-shadow: 0 0 5px 0 #03e9f4,0 0 25px 0 #03e9f4,0 0 50px 0 #03e9f4,0 0 75px 0 #03e9f4;
+    }
+    img{
+      transition: all .5s;
+      height: 3vw;
+      width: 3vw;
+    }
+  }
+    .wechat:hover .code{
+      opacity: 1;
+    }
+    .QQ:hover .code{
+      opacity: 1;
+    }
+    .weibo:hover .code{
+      opacity: 1;
+    }
+  }
+

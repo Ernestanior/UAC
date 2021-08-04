@@ -1,0 +1,55 @@
+
+
+ .one{
+    width: 100%;
+    height: 2px;
+    background: -webkit-linear-gradient(left,transparent,#03e9f4);
+    left: -100%;
+    top: 0;
+    animation:line1 1s linear infinite;
+  }
+  @keyframes line1{
+   50%,100%{
+     left: 100%;
+   }
+  }
+  .two{
+    width: 2px;
+    height: 100%;
+    background: -webkit-linear-gradient(top,transparent,#03e9f4);
+    right: 0;
+    top: -100%;
+    animation:line2 1s .2s linear infinite;
+
+  }  
+  @keyframes line2{
+    50%,100%{
+     top: 100%;
+    }
+  }
+  .three{
+    width: 100%;
+    height: 2px;
+    background: -webkit-linear-gradient(right,transparent,#03e9f4);
+    left: 100%;
+    bottom: 0;
+    animation:line3 1s .5s linear infinite;
+  }  
+  @keyframes line3{
+    50%,100%{
+     left: -100%;
+    }
+  }
+  .four{
+    width: 2px;
+    height: 100%;
+    background: -webkit-linear-gradient(bottom,transparent,#03e9f4);
+    left: 0;
+    top: 100%;
+    animation:line4 1s .7s linear infinite;
+  }
+  @keyframes line4{
+    50%,100%{
+     top: -100%;
+    }
+  }
