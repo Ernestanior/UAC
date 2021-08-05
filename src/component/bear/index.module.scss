@@ -3,14 +3,9 @@
   position: absolute;
   top: 10vh;
   .con{
-    // overflow-x: hidden;
-    // overflow-y: auto;
     width: 100vw;
     height: 90vh;
-    // perspective: 1px;
-    // transform-style: preserve-3d;
     .bearBox{
-      transform-style: inherit;
       height: 90vh;
     }
     .swipercon{
@@ -22,10 +17,6 @@
     }
   }
 }
-
-  // .secondBox{
-  //   transform: translateZ(-1px) scale(2);
-  // }
     .text{
       font-family: "SimHei";
       width: 50vw;

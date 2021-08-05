@@ -29,7 +29,6 @@ export default function index() {
         <div className={style.code}>
           <img src={code} alt="" />
           <div>UAC攻略群</div>
-          {/* <Border /> */}
         </div>
         <div className={style.workerBox}>
           <svg className={style.title}>
