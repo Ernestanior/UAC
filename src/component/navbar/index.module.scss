@@ -1,36 +1,41 @@
 .navbg{
   background-color: #000;
   position: fixed;
-  top: 0x;
+  top: 0;
+  width: 100vw;
   z-index: 1000;
   display: flex;
-  padding: 1.5vh 0 0 0;
-  display:flex;
-  justify-content: center;
+  justify-content: space-between;
+  padding: 20px 2vw 10px 2vw;
   align-items: center;
   img{
-    height: 7vw;
+    height: 5vw;
   }
   .navtitle{
     color: #fff;
-    font-size:3vw;
+    font-size:2.5vw;
     font-family: "LiSu";
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px
     // line-height:12vh;
   }
   .navbox{
     font-family: "SimSun";
-    width: 70vw;
+    width: 75vw;
     color: #fff;
     display: flex;
-    padding: 4vh 7vw;
     li{
       flex: 1;
-      font-size:2.3vh;
-      height: 2.5vh;
-      padding:1.5vh 0;
-      margin-right: 3vw;
+      font-size:18px;
+      height: 45px;
+      // background-color: #fff;
+      line-height: 45px;
+      margin-right: 40px;
       position: relative;
       overflow: hidden;
+      user-select: none;
       &:hover{
         border-radius: 5px;
         color: #000;
@@ -48,11 +53,12 @@
 }
 @media screen and (max-width:1100px) {
   .navbg{
+    padding: 20px 2vw 10px 0;
     img{
-      height: 10vw;
+      height: 6vw;
     }
     .navtitle{
-      font-size:4vw;
+      font-size:2.9vw;
     }
   }
   .navbox{
@@ -64,19 +70,23 @@
   }
 }
 @media screen and (max-width:700px) {
+  
   .navbg{
+    padding: 20px 2vw 10px 0;
     img{
-      height: 14vw;
+      height: 8vw;
     }
     .navtitle{
-      font-size:5vw;
+      font-size:3.2vw;
     }
-  }
     .navbox{
-    li{
-      &:nth-child(4){
-        display: none;
+      li{
+        margin-left: -20px;
+        &:nth-child(2){
+          display: none;
+        }
       }
     }
   }
+
 }

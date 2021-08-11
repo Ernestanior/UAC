@@ -17,17 +17,21 @@ export default function index() {
             <img src={youla} alt="" />
           </div>
         </div>
-        <span className={style.date}>Mar 21, 2020</span>
-        <span className={style.title}>有问必答</span>
-        <span className={style.contentOne}>
-          AR的最高输出技能怎么加点？
-        </span>
-        <span className={style.contentTwo}>
-          天赋点HC，先1级火弹，先满4射击，再点3压制，补1级弹药链，把压制点满....
-        </span>
+        <ul className={style.text}>
+          <li className={style.date}>Mar 21, 2020</li>
+          <li className={style.title}>有问必答</li>
+          <li className={style.contentOne}>
+            AR的最高输出技能怎么加点？
+          </li>
+          <li className={style.contentTwo}>
+            天赋点HC，先1级火弹，先满4射击，再点3压制，补1级弹药链，把压制点满....
+          </li>
+        </ul>
       </div>
       <div className={style.cover}></div>
-      <Cube type='skin'></Cube>
+      <div className={style.cube}>
+        <Cube type='skin'></Cube>
+      </div>
     </div>
   )
 }

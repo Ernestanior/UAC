@@ -17,17 +17,22 @@ export default function index() {
             <img src={youla} alt="" />
           </div>
         </div>
-        <span className={style.date}>Mar 21, 2020</span>
-        <span className={style.title}>怪物图鉴</span>
-        <span className={style.contentOne}>
-          白熊 -- 又名小米，移动速度快，是一种血量不高但危险性高的物种，它的跳跃让人类感到无比棘手...
-        </span>
-        <span className={style.contentTwo}>
-          沙虫 -- 又名金龙鱼，移动速度极快，血量略高，危险性极高，能穿梭于任意地形，在直线速度上...
-        </span>
+        <ul className={style.text}>
+          <li className={style.date}>Mar 21, 2020</li>
+          <li className={style.title}>怪物图鉴</li>
+          <li className={style.contentOne}>
+            白熊 -- 又名小米，移动速度快，是一种血量不高但危险性高的物种，它的跳跃让人类感到无比棘手...
+          </li>
+          <li className={style.contentTwo}>
+            沙虫 -- 又名金龙鱼，移动速度极快，血量略高，危险性极高，能穿梭于任意地形，在直线速度上...
+          </li>
+        </ul>
       </div>
       <div className={style.cover}></div>
-      <Cube type='monster'></Cube>
+      <div className={style.cube}>
+        <Cube type='monster'></Cube>
+      </div>
+
     </div>
   )
 }

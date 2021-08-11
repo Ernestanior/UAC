@@ -1,0 +1,100 @@
+.iconContainer{
+  position: absolute;
+  top: 4200px;
+  .code{
+    transition: all .8s;
+    position: absolute;
+    left: -24vw;
+    top: -18vh;
+    img{
+      width: 20vw;
+      height: 20vw;
+    }
+    opacity: 0;
+  }
+}
+.iconList{
+  position: absolute;
+  width: 850px;
+  // background-color: #fff;
+  left: 36vw;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  li{
+    border-radius: 50%;
+    box-shadow: 0 0 5px 0 #03e9f4,0 0 25px 0 #03e9f4;
+    padding:2vh;
+    height: 70px;
+    width: 70px;
+    margin: 0 3vw 3vw 0;
+    transition: all .5s;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    &:hover{
+      box-shadow: 0 0 5px 0 #03e9f4,0 0 25px 0 #03e9f4,0 0 50px 0 #03e9f4,0 0 75px 0 #03e9f4;
+    }
+    img{
+      transition: all .5s;
+      height: 40px;
+      width: 40px;
+    }
+  }
+    .wechat:hover .code{
+      opacity: 1;
+    }
+    .QQ:hover .code{
+      opacity: 1;
+    }
+    .weibo:hover .code{
+      opacity: 1;
+    }
+  }
+
+@media screen and (max-width:1200px) {
+  .iconContainer{
+    .code{
+      left: 300px;
+      top: -220px;
+      img{
+        width: 200px;
+        height: 200px;
+      }
+    }
+  }
+  .iconList{
+    left:10vw;
+  }
+}
+@media screen and (max-width:850px) {
+  .iconList{
+    left:0;
+  }
+}
+@media screen and (max-width:750px) {
+  .iconList{
+    left:-10vw;
+  }
+}
+@media screen and (max-width:650px) {
+  .iconContainer{
+    .code{
+      left: 100px;
+      top: -220px;
+      img{
+        width: 200px;
+        height: 200px;
+      }
+    }
+  }
+  .iconList{
+    left:5vw;
+    width: 450px;
+    li{
+      margin: 0 5vw 5vw 0;
+    }
+  }
+}
+

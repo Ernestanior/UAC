@@ -1,0 +1,297 @@
+$pinkColor:rgb(255, 144, 246);
+$greenColor:rgb(108, 255, 94);
+$yellowColor:rgb(244, 255, 94);
+
+.cardBox{
+  position: absolute;
+  top: 3500px;
+  left: 90px;
+  height:470px;
+  width: 55vw;
+  // box-shadow: 0 0 10px 0 #fff;
+  transition:all .2s;
+  // border: 2vh solid #fff;
+  // border-radius:3vh;
+  position: relative;
+  // background-color: #1e2d52;
+  overflow: hidden;
+  &:hover {
+    .workerBox{
+      .title{
+        transition: all .5s 1s;
+        left: 54%;
+      }
+      ul{
+        transition: all .5s 1s;
+        left: 50%;
+      }
+    };
+    .dress{
+      .dressOne{
+        transform: rotate(45deg) translate(5vw,-50vh);
+      }
+      .dressTwo{
+        transform: rotate(45deg) translate(5vw,-50vh);
+      }
+      .dressThree{
+        transform: rotate(45deg) translate(5vw,-50vh);
+      }
+      .dressFour{
+        transform: rotate(45deg) translate(5vw,-50vh);
+      }
+    }
+    .code{
+      transition: all 1s 1.3s;
+      opacity: 1;
+    }
+  }
+  .code{
+      position: absolute;
+      top: 10vh;
+      left:3vw;
+      height: 40vh;
+      width: 20vw;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      opacity: 0;
+      transition: .5s;
+      img{
+        height: 28vh;
+        width: 28vh;
+      }
+      div{
+        margin-top: 3vh;
+        font-family: 'SimHei';
+        box-shadow: 0 0 5px 0 #03e9f4,0 0 25px 0 #03e9f4,0 0 50px 0 #03e9f4;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 10vw;
+        height: 6vh;
+        font-size: 1.6vw;
+        color: #fff;
+      }
+    }
+  span{
+    position: absolute;
+  }
+  .workerBox{
+    .title{
+      position: absolute;
+      top: -2vh;
+      left: 8.5vw;
+      width: 300px;
+      transition:all .5s;
+      text{
+        fill: none;
+        font-weight: 800;
+        stroke: url(#carColor);
+        font-size:40px;
+        stroke-width:1;
+        stroke-dasharray: 10 800;
+        stroke-dashoffset: 10;
+        animation: drawing 5s linear infinite;
+        @keyframes drawing{
+          to{
+            stroke-dasharray: 800;
+            stroke-dashoffset: 0;
+          }
+        }
+      }
+    }
+    ul{
+      color: #fdc780;
+      font-family: 'SimHei';
+      font-size:4vw;
+      transition:all .5s;
+      position: absolute;
+      top: 240px;
+      left: 80px;
+      width: 20vw;
+      height: 15vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      padding: 2vh 0;
+      .workerlist{
+        .worker{
+          &:nth-child(1){
+            animation: shineGreen 1s linear alternate infinite;
+          }
+          &:nth-child(2){
+            animation: shineYellow 1s linear alternate infinite;
+          }
+          &:nth-child(3){
+            animation: shineGreen 1s linear alternate infinite;
+          }
+        }
+      }
+      li{
+        flex: 1;
+        margin-bottom: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .worker{
+          margin-left: 2.5vw;
+          height: 50px;
+          width: 50px;
+          border-radius: 50%;
+          transition: all .8s;
+          animation: shineGPurple 1s linear alternate infinite;
+          &:hover{
+            height:11vh;
+            width:11vh;
+          }
+        }
+
+      }
+      @keyframes shineGreen {
+        0%{
+          box-shadow: 0 0 5px 0 $greenColor,0 0 15px 0 $greenColor;
+        }
+        100%{
+          box-shadow: 0 0 5px 0 $greenColor,0 0 15px 0 $greenColor,0 0 30px 0 $greenColor,0 0 45px 0 $greenColor;
+        }
+      }
+      @keyframes shineYellow {
+        0%{
+          box-shadow: 0 0 5px 0 $yellowColor,0 0 15px 0 $yellowColor;
+        }
+        100%{
+          box-shadow: 0 0 5px 0 $yellowColor,0 0 15px 0 $yellowColor,0 0 30px 0 $yellowColor,0 0 45px 0 $yellowColor;
+        }
+      }
+      @keyframes shineGPurple{
+        0%{
+          box-shadow: 0 0 5px 0 $pinkColor,0 0 15px 0 $pinkColor;
+        }
+        100%{
+          box-shadow: 0 0 5px 0 $pinkColor,0 0 15px 0 $pinkColor,0 0 30px 0 $pinkColor;
+        }
+      }
+    }
+  }
+  .dress{
+    div:nth-child(n){
+      height: 420px;
+      width: 60px;
+      border-radius:35px;
+      
+    }
+    .dressOne{
+      position: absolute;
+      top: -120px;
+      right: 5vw;
+      transform:rotate(45deg);
+      transition:all .8s .4s;
+      box-shadow: 0 0 10px 0 rgb(255, 170, 170),0 0 30px 0 rgb(255, 170, 170);
+    }
+    .dressTwo{
+      position: absolute;
+      top: 16px;
+      right: 5vw;
+      transform:rotate(45deg);
+      transition:all .8s .6s;
+      box-shadow: 0 0 10px 0 rgb(128, 255, 166),0 0 30px 0 rgb(128, 255, 166);
+    }
+    .dressThree{
+      position: absolute;
+      top: 80px;
+      right:-2vw;
+      transition:all .8s .2s;
+      transform:rotate(45deg);
+      box-shadow: 0 0 10px 0 rgb(144, 229, 255),0 0 30px 0 rgb(144, 229, 255);
+    }
+    .dressFour{
+      position: absolute;
+      top: -250px;
+      right:5vw;
+      transition:all .8s;
+      transform:rotate(45deg);
+      box-shadow: 0 0 10px 0 rgb(232, 255, 149),0 0 30px 0 rgb(232, 255, 149);
+    }
+  }
+}
+@media screen and (max-width:1100px) {
+  .cardBox{
+    width: 80vw;
+  }
+  .dressOne{
+      width:9vw;
+    }
+  .cardContainer{
+    display: none;
+  }
+  .workerBox{
+      .title{
+      margin-left: 5.5vw;
+      // text{
+      //   font-size: 40px;
+      // }
+    }
+      ul{
+        margin-left:60px;
+      }
+  }
+  .cardBox:hover{
+    .workerBox{
+      .title{
+        // transform: translateX(20vw);
+        left: 42%;
+      }
+      ul{
+        // transform: translateX(20vw);
+        left: 42%;
+      }
+
+    }
+    .code{
+      transform: translateX(3.5vw);
+    }
+  }
+}
+@media screen and (max-width:800px) {
+  .dress{
+      display: none;
+    }
+    .workerBox{
+      .title{
+        margin-left: 40px;
+        // text{
+        //   font-size:40px;
+        //   // font-size: 80px;
+        //   // font-size:10px;
+        // }
+    }
+      ul{
+        margin-left:60px;
+      }
+    }
+    .cardBox:hover{
+      .workerBox{
+        .title{
+          transition: all .5s;
+          // transform: translateX(20vw);
+          left: 150%;
+        }
+        ul{
+          transition: all .5s;
+          // transform: translateX(20vw);
+          left: 150%;
+        }
+
+      }
+      .code{
+        transform: translateX(22vw);
+        transition: all .5s;
+        div{
+          width: 20vw;
+          font-size:3vw;
+        }
+      }
+    }
+}

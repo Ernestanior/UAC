@@ -1,0 +1,61 @@
+.levels{
+  position: absolute;
+  right: 8vw;
+  top: 3650px;
+  user-select: none;
+  .level{
+    position: relative;
+    width: 300px;
+    height:140px;
+    border-radius:12px;
+    background-color: pink;
+    cursor:pointer;
+    opacity: .7;
+    margin-top: -70px;
+    color: #fff;
+    transition: all 0.5s ease;
+    transform: rotateX(45deg) rotateY(-15deg) rotate(45deg);
+    padding: 25px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    &:hover{
+      transform: rotateX(30deg) rotateY(-15deg) rotate(30deg) translate(-25px,30px);
+      opacity: .9;
+    }
+  }
+  .one{
+    background:-webkit-linear-gradient(135deg, #bd7be8,#8063e1);
+    box-shadow: 20px 20px 60px rgba(#223254,.5),1px 1px 0px 1px #8063e1;
+    z-index: 4;
+  }
+  .two{
+    background:-webkit-linear-gradient(135deg, #7f94fc,#3f58e3);
+    box-shadow: 20px 20px 60px rgba(#223254,.5),1px 1px 0px 1px #3f58e3;
+    z-index: 3;
+  }
+  .three{
+    background:-webkit-linear-gradient(135deg, #21bbfe,#2c6fd1);
+    box-shadow: 20px 20px 60px rgba(#223254,.5),1px 1px 0px 1px #2c6fd1;
+    z-index: 2;
+  }
+  .four{
+    background:-webkit-linear-gradient(135deg, #415197,#352f64);
+    box-shadow: 20px 20px 60px rgba(#223254,.5),1px 1px 0px 1px #352f64;
+    z-index: 1;
+  }
+  .content{
+    font-size:27px;
+    font-family: 'SimHei';
+    font-weight:800;
+  }
+  .worker{
+    margin-left: 2vw;
+    height: 6vh;
+    width: 6vh;
+    border-radius: 50%;
+    transition: all .8s;
+    animation: shineGPurple 1s linear alternate infinite;
+  }
+}

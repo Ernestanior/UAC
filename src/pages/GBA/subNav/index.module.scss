@@ -1,0 +1,259 @@
+$blue: rgb(123, 191, 255); 
+$orange: rgb(255, 190, 104); 
+$red: rgb(255, 98, 98); 
+
+.subBar{
+  width: 60vw;
+  height: 10vh;
+  position: absolute;
+  top: 20vh;
+  left: 50%;
+  transform: translateX(-50%);
+  // background-color: pink;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  .item{
+    width: 200px;
+    height: 55px;
+    display: flex;
+    justify-content: flex-start;
+  }
+  .subItem{
+    transform:rotate(-25deg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size:25px;
+    
+    &:hover{
+      span{
+        // transform:translate(80px,40px);
+        width: 85px;
+        height: 85px;
+      }
+      .ring{
+        // transform:translate(80px,40px) rotateX(65deg);
+        width: 120px;
+        height: 90px;
+      }
+    }
+    span{
+      // transform:translate(-80px,-40px);
+      transition: all 2s;
+      display: inline-block;
+      position: absolute;
+      width: 45px;
+      height: 45px;
+      border-radius: 50%;
+      background-color: #000;
+      &:nth-child(2){
+        z-index: 1;
+        clip-path: inset( 0 0 50%);
+      }
+    }
+    div{
+      
+      &:nth-child(4){
+        color: red;
+        z-index: 10;
+      }
+    }
+
+    .hole::after{
+      clip-path: inset( 0 0 50%);
+    }
+    .ring{
+      transition: all 2s;
+      position: absolute;
+      width: 90px;
+      height: 60px;
+      border-radius: 50%;
+      transform:rotateX(65deg);
+      // animation:shine 5s linear alternate infinite;
+    }
+  }
+  .One{
+    span{
+      &:nth-child(1){
+        animation:ballshine1 1s linear alternate infinite;
+        box-shadow:0 0 5px 0 $blue,0 0 25px 0 $blue;
+      }
+      @keyframes ballshine1{
+        to{
+        box-shadow:0 0 5px 0 $blue;
+        }
+      }
+    }
+    .ring{
+      box-shadow:0 0 5px 0 $blue,0 0 25px 0 $blue,0 0 50px 0 $blue;
+    }
+    div{
+      transform: rotate(25deg) translateX(90px);
+      &:nth-child(4){
+      color:$blue;
+      user-select: none;
+      }
+    }
+    &:hover{
+      span{
+        transform:translate(80px,40px);
+      }
+      .ring{
+        transform:translate(80px,40px) rotateX(65deg);
+      }
+    }
+  }
+  .Two{
+    span{
+      &:nth-child(1){
+        animation:ballshine2 1s linear alternate infinite;
+        box-shadow:0 0 5px 0 $orange,0 0 25px 0 $orange;
+      }
+      @keyframes ballshine2{
+        to{
+        box-shadow:0 0 5px 0 $orange;
+        }
+      }
+    }
+    .ring{
+      box-shadow:0 0 5px 0 $orange,0 0 25px 0 $orange,0 0 50px 0 $orange;
+    }
+    div{
+      transform: rotate(25deg) translateX(80px);
+      &:nth-child(4){
+      color:$orange;
+      user-select: none;
+      }
+    }
+    &:hover{
+      span{
+        transform:translate(70px,35px);
+      }
+      .ring{
+        transform:translate(70px,35px) rotateX(65deg);
+      }
+    }
+  }
+  .Three{
+    span{
+      &:nth-child(1){
+        animation:ballshine3 1s linear alternate infinite;
+        box-shadow:0 0 5px 0 $red,0 0 25px 0 $red;
+      }
+      @keyframes ballshine3{
+        to{
+        box-shadow:0 0 5px 0 $red;
+        }
+      }
+    }
+    .ring{
+      box-shadow:0 0 5px 0 $red,0 0 25px 0 $red,0 0 50px 0 $red;
+      
+    }
+    div{
+      transform: rotate(25deg) translateX(70px);
+      &:nth-child(4){
+      color:$red;
+      user-select: none;
+      }
+    }
+    &:hover{
+      span{
+        transform:translate(62px,30px);
+      }
+      .ring{
+        transform:translate(62px,30px) rotateX(65deg);
+      }
+    }
+  }
+  .activeOne {
+    span{
+      transform:translate(80px,40px);
+      width: 105px;
+      height: 105px;
+    }
+    .ring{
+      transform:translate(80px,40px) rotateX(65deg);
+      width: 150px;
+      height: 120px;
+    }
+  }
+  .activeTwo {
+    span{
+      transform:translate(70px,35px);
+      width: 105px;
+      height: 105px;
+    }
+    .ring{
+      transform:translate(70px,35px) rotateX(65deg);
+      width: 150px;
+      height: 120px;
+    }
+  }
+  .activeThree {
+    span{
+      transform:translate(60px,30px);
+      width: 105px;
+      height: 105px;
+    }
+    .ring{
+      transform:translate(60px,30px) rotateX(65deg);
+      width: 150px;
+      height: 120px;
+    }
+  }
+}
+@media screen and (max-width:1100px){
+  .subBar{
+    width: 90vw;
+  }
+}
+@media screen and (max-width:700px){
+  .subBar{
+    width: 100vw;
+    .item{
+      .subItem{
+        span{
+          display: none;
+        }
+        .ring{
+          display: none;
+        }
+        div:nth-child(4){
+          border-radius: 7px;
+          padding: 5px 15px;
+        }
+      }
+      .One{
+        div:nth-child(4){
+          box-shadow:0 0 5px 0 $blue, 0 0 25px 0 $blue,0 0 50px 0 $blue;
+          &:hover{
+          background-color: $blue;
+          color: #fff;
+          }
+        }
+      }
+      .Two{
+        div:nth-child(4){
+          box-shadow:0 0 5px 0 $orange, 0 0 25px 0 $orange,0 0 50px 0 $orange;
+          &:hover{
+            background-color: $orange;
+            color: #fff;
+          }
+        }
+      }
+      .Three{
+        div:nth-child(4){
+          box-shadow:0 0 5px 0 $red, 0 0 25px 0 $red,0 0 50px 0 $red;
+          &:hover{
+            background-color: $red;
+            color: #fff;
+          }
+        }
+      }
+    }
+
+  }
+
+}

@@ -1,75 +1,193 @@
 .star{
       li{
         width: 2px;
-        height:20vh;
+        height:100px;
         background: -webkit-linear-gradient(top,transparent,#fff);
         position:absolute;
         transform:rotate(45deg);
         
       }
       li:nth-child(1){
-        animation: star1 10s linear infinite;
+        animation: star1 6s linear infinite;
       }
       @keyframes star1{
         0%{
-          top:-20vh;
-          left:60vw
+          top:0;
+          right:400px;
         }
         100%{
-          top:300vh;
-          left:-100vw
+          top:1200px;
+          right:1200px;
         }
       }
       li:nth-child(2){
-        animation: star2 5s linear infinite;
+        animation: star2 7s linear infinite;
       }
       @keyframes star2{
         0%{
-          top:10vh;
-          left:80vw
+          top:100px;
+          right:0;
         }
         100%{
-          top:300vh;
-          left:-80vw
+          top:1700px;
+          right:900px
         }
       }
       li:nth-child(3){
-        animation: star3 8s linear infinite;
+        animation: star3 5s linear infinite;
       }
       @keyframes star3{
         0%{
-          top:0vh;
-          right:10vw;
+          top:100px;
+          right:200px;
         }
         100%{
-          top:250vh;
-          right:150vw
+          top:2000px;
+          right:1100px;
         }
       }
       li:nth-child(4){
-        animation: star4 6s linear infinite;
+        animation: star4 3s linear infinite;
       }
       @keyframes star4{
         0%{
-          top:20vh;
-          right:-10vw;
+          top:800px;
+          right:0;
         }
         100%{
-          top:250vh;
-          right:100vw
+          top:2500px;
+          right:1100px;
         }
       }
       li:nth-child(5){
-        animation: star5 4s linear infinite;
+        animation: star5 6s linear infinite;
       }
       @keyframes star5{
         0%{
-          top:100vh;
-          right:0vw;
+          top:1000px;
+          right:200px;
         }
         100%{
-          top:250vh;
-          right:70vw
+          top:2600px;
+          right:1200px
         }
       }
+      li:nth-child(6){
+        animation: star6 2s linear infinite;
+      }
+      @keyframes star6{
+        0%{
+          top:1500px;
+          right:600px;
+        }
+        100%{
+          top:2200px;
+          right:1100px;
+        }
+      }
+      li:nth-child(7){
+        animation: star7 6s linear infinite;
+      }
+      @keyframes star7{
+        0%{
+          top:1800px;
+          right:0;
+        }
+        100%{
+          top:3600px;
+          right:1400px;
+        }
+      }
+      li:nth-child(8){
+        animation: star8 3s linear infinite;
+      }
+      @keyframes star8{
+        0%{
+          top:2100px;
+          right:0;
+        }
+        100%{
+          top:4000px;
+          right:1500px;
+        }
+      }
+      li:nth-child(9){
+        animation: star9 5s linear infinite;
+      }
+      @keyframes star9{
+        0%{
+          top:2400px;
+          right:0;
+        }
+        100%{
+          top:4350px;
+          right:1400px;
+        }
+      }
+      li:nth-child(10){
+        animation: star10 6s linear infinite;
+      }
+      @keyframes star10{
+        0%{
+          top:2700px;
+          right:0;
+        }
+        100%{
+          top:4350px;
+          right:1300px;
+        }
+      }
+      li:nth-child(11){
+        animation: star11 4s linear infinite;
+      }
+      @keyframes star11{
+        0%{
+          top:2700px;
+          right:0;
+        }
+        100%{
+          top:4350px;
+          right:1200px;
+        }
+      }
+      li:nth-child(12){
+        animation: star12 5s linear infinite;
+      }
+      @keyframes star12{
+        0%{
+          top:2700px;
+          right:000px;
+        }
+        100%{
+          top:4050px;
+          right:1100px;
+        }
+      }
+      li:nth-child(13){
+        animation: star13 3s linear infinite;
+      }
+      @keyframes star13{
+        0%{
+          top:3300px;
+          right:0;
+        }
+        100%{
+          top:4350px;
+          right:900px;
+        }
+      }
+      li:nth-child(14){
+        animation: star14 7s linear infinite;
+      }
+      @keyframes star14{
+        0%{
+          top:3600px;
+          right:0;
+        }
+        100%{
+          top:4350px;
+          right:700px;
+        }
+      }
+
     }

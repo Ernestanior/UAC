@@ -1,0 +1,77 @@
+$color:#fff;
+.blackContainer{
+
+  width: 100vh;
+  height: 70vh;
+  display: flex; 
+  align-items: center; 
+  justify-content: center;
+  
+  transition: all 2s;
+  // background-color: #fff;
+  .hole{
+    transform:rotate(-25deg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    &::before,&::after{
+      transition: all 2s;
+      content:'';
+      position: absolute;
+      width: 10vw;
+      height: 10vw;
+      background-color: #000;
+      border-radius: 50%;
+    }
+    &::before{ 
+      // box-shadow:0 0 1px 0 $color;
+      animation:shine1 1s linear alternate infinite;
+    }
+    @keyframes shine1{
+      to{
+      box-shadow:0 0 5px 0 $color,0 0 25px 0 $color;
+      }
+    }
+  }
+  
+
+  .hole::after{
+    clip-path: inset( 0 0 50%);
+  }
+  .ring{
+    transition: all 2s 1s;
+    position: absolute;
+    width: 15vw;
+    height: 13vw;
+    border-radius: 50%;
+    box-shadow:0 0 5px 0 $color,0 0 25px 0 $color,0 0 50px 0 $color;
+    transform: rotateX(65deg);
+    animation:shine 5s linear alternate infinite;
+  }
+  &:hover {
+    .ring{
+      box-shadow:0 0 5px 0 #b3f8fc,0 0 25px 0 #b3f8fc,0 0 50px 0 #b3f8fc;
+    }
+  }
+  @keyframes shine{
+    to{
+    box-shadow:0 0 5px 0 $color,0 0 25px 0 $color,0 0 50px 0 $color,0 0 75px 0 $color,0 0 100px 0 $color,0 0 125px 0 $color;
+    }
+  }
+}
+@media screen and (max-width:700px) {
+  .blackContainer{
+    right:-300px;
+    .hole{
+      &::before,&::after{
+        width: 20vw;
+        height: 20vw;
+      }
+    }
+    .ring{
+      width: 30vw;
+      height: 26vw;
+    }
+  }
+}
