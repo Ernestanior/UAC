@@ -83,3 +83,16 @@ $lightBlue:rgb(96, 180, 248);
     }
   }
 }
+@media screen and (max-width: 415px) {
+  .bg{
+    .Saturn{
+      display: none;
+    }
+  }
+  .bgc{
+    width: 90%;
+    .title{
+      transform: translateX(0px);
+    }
+  }
+}

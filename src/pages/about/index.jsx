@@ -12,6 +12,7 @@ import TD from 'assets/uac/skills/second/TD.png'
 import EF from 'assets/uac/skills/second/EF.png'
 import PL from 'assets/uac/skills/second/PL.png'
 export default function index() {
+  document.documentElement.scrollTop = document.body.scrollTop = 0;
   return (
     <div className={style.bg}>
       {/* <Star></Star> */}

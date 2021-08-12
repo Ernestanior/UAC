@@ -82,9 +82,13 @@
     .navbox{
       li{
         margin-left: -20px;
+        &:nth-child(1){
+          margin-left: 0;
+        }
         &:nth-child(2){
           display: none;
         }
+        
       }
     }
   }

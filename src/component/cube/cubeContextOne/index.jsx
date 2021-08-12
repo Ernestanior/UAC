@@ -3,12 +3,17 @@ import style from './index.module.scss'
 import Cube from 'component/cube/cubeTwo'
 import Border from 'component/border/borderTwo'
 import youla from 'assets/icon/youla.png'
-export default function index() {
+import { withRouter } from 'react-router-dom'
+export default withRouter(Index)
+function Index(props) {
+  const handleMore = () => {
+    props.history.replace('/handbook');
+  }
   return (
     <div className={style.cubecontainer}>
       <div className={style.textcontainer}>
         <Border />
-        <div className={style.more}>
+        <div className={style.more} onClick={handleMore}>
           <svg className={style.border}>
             <rect className={style.rectangle} />
           </svg>

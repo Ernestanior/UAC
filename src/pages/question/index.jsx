@@ -3,6 +3,7 @@ import style from './index.module.scss'
 import Saturn from 'component/Saturn'
 // import Star from 'component/star'
 export default function index() {
+  document.documentElement.scrollTop = document.body.scrollTop = 0;
   return (
     <div className={style.bg}>
       {/* <Star></Star> */}

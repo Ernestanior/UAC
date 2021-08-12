@@ -17,16 +17,17 @@
 }
     .text{
       font-family: "SimHei";
-      width: 50vw;
-      height: 30vh;
+      width: 315px;
+      height: 200px;
       position: absolute;
-      top: 3vh;
+      top: 25px;
       left:50%;
-      transform:translateX(-40%);
+      transform:translateX(-50%);
+      transition: all 0.3s;
       text{
         fill: none;
         stroke: url(#geekColor);
-        font-size:4vw;
+        font-size:45px;
         stroke-width:1;
         stroke-dasharray: 10 800;
         stroke-dashoffset: 10;
@@ -129,8 +130,9 @@
       }
     }
   }
-    @media screen and (max-width:900px)  {
+    @media screen and (max-width:635px)  {
     .text{
+      top: 170px;
       text{
         &:nth-child(3){
           transition: all .2s;

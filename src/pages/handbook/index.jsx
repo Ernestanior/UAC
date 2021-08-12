@@ -4,6 +4,7 @@ import Saturn from 'component/Saturn'
 import { Table } from 'antd'
 
 export default function index() {
+  document.documentElement.scrollTop = document.body.scrollTop = 0;
   const dataOne = [
     {
       key: '1',

@@ -10,6 +10,7 @@ import Contact from 'pages/home/contact'
 import Swiper from 'pages/home/swiper'
 import Icon from 'pages/home/iconList'
 export default function index() {
+  document.documentElement.scrollTop = document.body.scrollTop = 0;
   return (
     <div className={style.bg}>
       {/* <Star /> */}

@@ -7,7 +7,7 @@ import { withRouter } from 'react-router-dom'
 export default withRouter(Index)
 function Index(props) {
   const handlePG = (e) => {
-    props.history.replace('/gba/pg')
+    props.history.replace('/gba/pg', '游乐场')
   }
   return (
     <div className={style.cubecontainer}>
@@ -30,7 +30,6 @@ function Index(props) {
           <li className={style.contentThree}>军官军衔(CO): 火力支援专家, 排长, 幽魂
           </li>
         </ul>
-
       </div>
       <div className={style.cube}>
         <Cube type='character'></Cube>

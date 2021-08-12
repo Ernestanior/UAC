@@ -13,12 +13,12 @@ function App() {
     <div className="App">
       <Navbar />
       <Switch>
-        <Route path='/home' component={Home}></Route>
         <Route path='/about' component={About}></Route>
         <Route path='/gba' component={Gba}></Route>
         <Route path='/handbook' component={Handbook}></Route>
         <Route path='/FAQ' component={Question}></Route>
-        <Redirect to='/home' />
+        <Route path='/' component={Home}></Route>
+        <Redirect to='/' />
       </Switch>
     </div>
   );

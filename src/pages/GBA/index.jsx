@@ -7,6 +7,7 @@ import Ph from './ph'
 // import Star from 'component/star'
 import { Route, Redirect, Switch } from 'react-router-dom'
 export default function Index(props) {
+  document.documentElement.scrollTop = document.body.scrollTop = 0;
   return (
     <div className={style.bg}>
       {/* <Star></Star> */}

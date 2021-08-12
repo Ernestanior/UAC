@@ -3,21 +3,19 @@ $orange: rgb(255, 190, 104);
 $red: rgb(255, 98, 98); 
 
 .subBar{
-  width: 60vw;
+  width: 45vw;
   height: 10vh;
   position: absolute;
-  top: 20vh;
-  left: 50%;
-  transform: translateX(-50%);
+  top: 170px;
+  left: 23vw;
   // background-color: pink;
   display: flex;
   justify-content: space-between;
   align-items: center;
   .item{
-    width: 200px;
-    height: 55px;
-    display: flex;
-    justify-content: flex-start;
+    // display: flex;
+    // justify-content: flex-start;
+    // background-color: blue;
   }
   .subItem{
     transform:rotate(-25deg);
@@ -206,12 +204,14 @@ $red: rgb(255, 98, 98);
 }
 @media screen and (max-width:1100px){
   .subBar{
-    width: 90vw;
+    width: 60vw;
+    left: 10vw;
   }
 }
 @media screen and (max-width:700px){
   .subBar{
-    width: 100vw;
+    width: 80vw;
+    left: -50px;
     .item{
       .subItem{
         span{
@@ -223,6 +223,7 @@ $red: rgb(255, 98, 98);
         div:nth-child(4){
           border-radius: 7px;
           padding: 5px 15px;
+          font-size: 20px;
         }
       }
       .One{

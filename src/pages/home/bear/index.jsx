@@ -18,8 +18,8 @@ export default function index() {
                   <stop offset="100%" stopColor="#777"></stop>
                 </linearGradient>
               </defs>
-              <text x="100" y="100">不死突袭编年史</text>
-              <text x="220" y="160">UAC攻略论坛</text>
+              <text y="100">不死突袭编年史</text>
+              <text x="120" y="160">UAC攻略论坛</text>
             </svg>
             <div className={style.bg1}>
               <div className={style.bg2}>

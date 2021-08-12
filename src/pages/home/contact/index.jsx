@@ -38,7 +38,7 @@ export default function index() {
                 <stop offset="100%" stopColor="#fec780"></stop>
               </linearGradient>
             </defs>
-            <text y="90" className={style.text}>玩具车打工仔</text>
+            <text y="35" className={style.text}>玩具车打工仔</text>
           </svg>
           <ul>
             <li className={style.workerlist}>
